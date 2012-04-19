@@ -1,0 +1,25 @@
+<%= form_for @article, :html => { :class => 'form-horizontal' } do |f| %>
+  <div class="control-group">
+    <%= f.label :title, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :title, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :content, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_area :content, :class => 'text_area' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :published_on, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.datetime_select :published_on, :class => 'datetime_select' %>
+      <%# f.text_field :published_on, :class => 'date' %>
+    </div>
+  </div>
+  <div class="form-actions">
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")), articles_path, :class => 'btn' %>
+  </div>
+<% end %>
