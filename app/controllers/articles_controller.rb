@@ -1,4 +1,15 @@
 class ArticlesController < ApplicationController
+  
+  def calendar
+    @articles = Article.all
+    @date = params[:month] ? ((DateTime.strptime(params[:month], fmt = "%Y-%m")) rescue Date.today) : Date.today
+
+    respond_to do |format|
+      format.html
+      format.json { render json: @articles }
+    end
+  end
+  
   # GET /articles
   # GET /articles.json
   def index
@@ -24,7 +35,7 @@ class ArticlesController < ApplicationController
   # GET /articles/new
   # GET /articles/new.json
   def new
-    @article = Article.new
+    @article = Article.new(:title => 'Title ', :content => 'Content ')
 
     respond_to do |format|
       format.html # new.html.erb

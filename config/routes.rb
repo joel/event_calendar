@@ -1,6 +1,10 @@
 EventCalendar::Application.routes.draw do
   
-  resources :articles
+  resources :articles do
+    collection do
+      get 'calendar'
+    end
+  end
 
   root :to => "articles#index"
   
