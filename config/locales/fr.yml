@@ -1,0 +1,12 @@
+fr:
+  datepicker:
+    date: 
+      formats: dd/mm/yy
+    day:
+      names:
+        full: "['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi']"
+        short: "['Di', 'Lu', 'Ma', 'Me', 'Je', 'Ve', 'Sa']"
+    month:
+      names:
+        full: "['Janvier', 'Fevrier', 'Mars', 'Avril', 'Mai', 'Juin', 'Jullet', 'Aout', 'Septembre', 'Octobre', 'Novembre', 'Decembre']"
+        short: "['Jan', 'Feb', 'Mar', 'Avr', 'Mai', 'Juin', 'Jul', 'Aout', 'Sept', 'Oct', 'Nov', 'Dec']"

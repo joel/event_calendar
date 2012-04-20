@@ -65,6 +65,18 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <%= javascript_include_tag "application" %>
+    
+    <script type="text/javascript">
+      jQuery(function() {
+        return $('.datepicker').datepicker({
+          dateFormat: "<%= I18n.t('datepicker.date.formats') %>",
+          dayNames: <%= I18n.t('datepicker.day.names.full') %>,
+          dayNamesMin: <%= I18n.t('datepicker.day.names.short') %>,
+          monthNames: <%= I18n.t('datepicker.month.names.short') %>,
+          monthNamesShort: <%= I18n.t('datepicker.month.names.short') %>
+        });
+      });
+    </script>
      
   </body>
 </html>
