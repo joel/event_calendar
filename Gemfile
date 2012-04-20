@@ -8,6 +8,7 @@ gem 'rails', '3.2.3'
 gem 'sqlite3'
 
 gem "twitter-bootstrap-rails"
+# https://github.com/watu/table_builder
 gem "watu_table_builder", :require => "table_builder"
 
 # Gems used only for assets and not required
