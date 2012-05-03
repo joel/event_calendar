@@ -63,6 +63,7 @@ class ArticlesController < ApplicationController
       end
     end
   end
+  alias_method :block, :create
 
   # PUT /articles/1
   # PUT /articles/1.json

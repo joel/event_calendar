@@ -1,8 +1,10 @@
 EventCalendar::Application.routes.draw do
   
+  match '/articles/new_event' => "articles#new_event"
   resources :articles do
     collection do
       get 'calendar'
+      post :block
     end
   end
 

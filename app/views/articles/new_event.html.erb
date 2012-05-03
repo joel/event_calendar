@@ -1,0 +1,6 @@
+<%= form_tag('/articles/block', :method => :post) do %>
+  <%= text_field_tag 'article[title]', nil, :class => 'text_field' %><br/>
+  <%= text_area_tag 'article[content]', nil, :class => 'text_area' %><br/>
+  <%= text_field_tag 'article[published_on]', nil, :class => 'datepicker' %><br/>
+  <%= submit_tag "Create Article", :class => 'btn btn-primary' %>
+<% end %>
